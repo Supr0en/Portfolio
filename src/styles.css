@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary: #3B2F2F;
+    --secondary: #AD8762;
+    --third: #C0C0C0;
+    --white: #ffffff;
+    --black: #000000;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    background-image: url(./assets/Images/20535-NSNRWU.jpg);
+}

@@ -1,0 +1,29 @@
+#container {
+    padding: 4%;
+    height: 350px;
+    width: 100vh;
+    background: rgba(59, 47, 47, 0.3);
+    backdrop-filter: blur(3.5px);
+    border: none;
+    border-radius: 10px;
+}
+h2 {
+    font-size: 1.25rem;
+}
+p {
+    font-size: .75rem;
+}
+.project-card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.project-card {
+    width: 25%;
+    min-height: 280px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--secondary);
+}
