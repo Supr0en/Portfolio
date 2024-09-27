@@ -13,7 +13,7 @@
     flex-direction: row;
     gap: 40px;
     overflow: hidden;
-    list-style-type: none;
+    animation: slide 30s linear infinite;
 }
 
 .project-card {
@@ -25,8 +25,11 @@
 }
 
 @media only screen and (min-width: 600px) {
+    /* .project-card-container {
+    } */
     .project-card {
-        animation: move 3s linear infinite;
+        scroll-snap-align: center;
+        /* animation: move 3s linear infinite; */
     }
 }
 
@@ -46,11 +49,11 @@
 
 }
 
-@keyframes move {
+@keyframes slide {
     0% {
-        transform: translateX(-100%);
+      transform: translateX(0%);
     }
     100% {
-        transform: translateX(50%);
+      transform: translateX(100%);
     }
-}
+  }
