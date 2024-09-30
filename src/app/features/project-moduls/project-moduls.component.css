@@ -2,16 +2,3 @@
     height: 50%;
     background-color: transparent;
 }
-.grid-container{
-    margin: 10px;
-    justify-content: center;
-    padding-top: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 25%);
-    gap: 10px;
-}
-.project-item {
-    border: solid 1px black;
-    min-width: 20%;
-    height: 250px;
-}

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import * as profileData from '../../../assets/content.json';
 
 @Component({
@@ -10,6 +10,11 @@ import * as profileData from '../../../assets/content.json';
 })
 export class ProfileComponent implements OnInit{
   data: any = profileData
+  header: string = '';
+  content: string = '';
+  
   ngOnInit(): void {
+    this.header = this.data.profile.header;
+    this.content = this.data.profile.text;
   }
 }

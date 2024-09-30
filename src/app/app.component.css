@@ -18,13 +18,14 @@ a {
 footer {
     display: flex;
     align-items: center;
-    position: relative;
+    position: absolute;
     top: 100vh;
     max-width: 100vw;
     height: 50px;
 }
 
 .footer-island {
+    padding: 5px;
     display: flex;
     width: 15vw;
     height: 50px;
@@ -36,10 +37,35 @@ footer {
     border-top-left-radius: 10px;
 }
 
+.fa{
+    padding: 4px 10px 4px 10px;
+    font-size: 26px;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 50%; 
+}
+
+.fa-linkedin {
+    background-color: #007bb5;
+    color: white;
+    flex-grow: 1;
+}
+.fa-chevronUp {
+    background-color: transparent;
+    color: var(--secondary);
+    flex-grow: 1;
+}
+.fa-twitter {
+    background-color: black;
+    color: white;
+    flex-grow: 1;
+}
+
 @media only screen and (max-width: 600px) {
     footer {
-        position: relative;
-        top: calc(110vh + 50px);
+        position: absolute;
+        top: calc(120vh + 150px);
         min-width: 100vw;
     }
 

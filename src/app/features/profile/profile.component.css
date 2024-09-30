@@ -2,6 +2,7 @@
     padding: 4%;
     height: 45%;
     min-width: 55vw;
+    max-width: 55vw;
     display: flex;
     align-items: center;
 }

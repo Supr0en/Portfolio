@@ -1,6 +1,14 @@
-[
+{
+  "text": "profile",
+  "text2": "this is test data for my profile data",
+  "profile": {
+    "header": "How/where",
+    "text": "I am 20 years old software developper from Vantaa, Finland. I was born in 2004 december 30. i lived in Otalampi, Vihti for 15 years of my life."
+  },
+  "projects": [
     {
-        "id": "profile",
-        "text": "this is test data for my profile data"
+      "project-name": "project-name",
+      "description": "this is project"
     }
-]
+  ]
+}
