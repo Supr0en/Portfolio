@@ -63,11 +63,11 @@
         "deploy": {
           "builder": "angluar-cli-ghpages:deploy",
           "options": {
-            "repo": "https://github.com/Supr0en/Portfolio",
-            "branch": "main",
+            "repo": "https://github.com/Supr0en/Portfolio/",
+            "branch": "master",
             "dir": "dist/portfolio/browser"
           }
-        }
+        },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
