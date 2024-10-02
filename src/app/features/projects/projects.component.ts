@@ -1,5 +1,6 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import * as Projects from '../../../assets/content.json';
 
 @Component({
   selector: 'app-projects',
@@ -8,13 +9,22 @@ import { CommonModule } from '@angular/common';
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })
-export class ProjectsComponent{
-  items: string[] = ['extension', 'school', 'website', 'school2', 'algorithm', 'website2'];
+export class ProjectsComponent implements OnInit{
+  data: any = Projects;
+  projectNames: string[] = [];
   displayedItems: string[] = [];
+
+  ngOnInit(): void {
+    for (let i = 0; i < this.data.projects.length; i++) {
+      let project: string = this.data.projects[i].projectName;
+      this.projectNames.push(project);
+    }
+    console.log(this.projectNames);
+  }
   
   constructor() {
     window.onload = () => {
-      this.displayedItems.unshift(this.items[0]);
+      this.displayedItems.unshift(this.projectNames[0]);
       this.startSlidingAnimation();
     };
   }
@@ -22,13 +32,13 @@ export class ProjectsComponent{
   startSlidingAnimation() {
     let index: number = 1;
     setInterval(() => {
-      if (this.items.length <= this.displayedItems.length) {
-        if (index == this.items.length) {index = 0};
-        this.displayedItems.unshift(this.items[index]);
+      if (this.projectNames.length <= this.displayedItems.length) {
+        if (index == this.projectNames.length) {index = 0};
+        this.displayedItems.unshift(this.projectNames[index]);
         this.displayedItems.pop();
         index++;
       } else {
-        this.displayedItems.unshift(this.items[index]);
+        this.displayedItems.unshift(this.projectNames[index]);
         index++;
       }
       // if (this.items.length < this.displayedItems.length) {

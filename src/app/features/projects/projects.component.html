@@ -1,5 +1,7 @@
 <div id="container">
   <ul class="project-card-container">
-    <li *ngFor="let item of displayedItems; let index = index" class="project-card" [id]=index >{{ item }}</li>
+    <li *ngFor="let item of displayedItems; let index = index" class="project-card" [id]=index >
+      <h2>{{ item }}</h2>
+    </li>
   </ul>
 </div>

@@ -24,6 +24,11 @@ h1 {
     font-size: 1.7rem;
     color: var(--primary) !important;
 }
+h2 {
+    font-size: 1.1rem;
+    color: var(--primary);
+    font-weight: ;
+}
 
 p {
     font-size: 1rem

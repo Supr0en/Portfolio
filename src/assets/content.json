@@ -3,12 +3,24 @@
   "text2": "this is test data for my profile data",
   "profile": {
     "header": "How/where",
-    "text": "I am 20 years old software developper from Vantaa, Finland. I was born in 2004 december 30. i lived in Otalampi, Vihti for 15 years of my life."
+    "text": "I am 20 years old software developer from Vantaa, Finland. I was born in 2004 december 30. i lived in Otalampi, Vihti for 15 years of my life."
   },
   "projects": [
     {
-      "project-name": "project-name",
-      "description": "this is project"
+      "projectName": "Better-input extension",
+      "description": "This extension lets you add (quots, brackets and etc) around highlighted text in input field."
+    },
+    {
+      "projectName": "Webhook-executor",
+      "description": "this project was my and my friends project as an interns at Komu homes. This project is downloadable from npm and it runs script when webhook is detected in github repository."
+    },
+    {
+      "projectName": "Sakila (fictional movie rental site)",
+      "description": "Sakila was project in Business College Helsinki, where we needed to make website for movie rental place called Sakila, Website uses SQL database where it fetches the movies in screen."
+    },
+    {
+      "projectName": "Full-stack-open",
+      "description": "This was part of my intern ship at Komu homes where we first made parts of these to prepare us to work on there project."
     }
   ]
 }
