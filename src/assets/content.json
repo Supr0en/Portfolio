@@ -1,9 +1,10 @@
 {
-  "text": "profile",
-  "text2": "this is test data for my profile data",
   "profile": {
-    "header": "How/where",
-    "text": "I am 20 years old software developer from Vantaa, Finland. I was born in 2004 december 30. i lived in Otalampi, Vihti for 15 years of my life."
+    "header": "How/Where/What",
+    "text": "I am 20 years old software developer from Vantaa, Finland. I was born in 2004 december 30. i lived in Otalampi, Vihti for 15 years of my life.",
+    "education": "I have studied at Business College Helsinki where my field was Information and communication tecnologies and i specialised in Web-development. Currently studing in Haaga-Helia University of applied sience.",
+    "devStack": "my dev stack consists most on Web-development (JavaScript/TypeScript, HTML, CSS, React/React Native, Angular) to support my knowlidge in web-development i know some Python, SQL/noSQL, nodeJS, express and JSON.",
+    "future": "In future i want to have good knowlidge of cloud platforms and have more knowlidge in my field."
   },
   "projects": [
     {
