@@ -17,7 +17,7 @@
 
 html{
     scroll-behavior: smooth;
-    background-image: url(./assets/Images/20535-NSNRWU.jpg);
+    background-image: url(./assets/Images/bg-coffee.jpg);
 }
 
 h1 {
@@ -27,7 +27,7 @@ h1 {
 h2 {
     font-size: 1.1rem;
     color: var(--primary);
-    font-weight: ;
+    font-weight: bold;
 }
 
 p {
@@ -38,4 +38,5 @@ p {
     display: none;
     border: none;
   }
-  
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

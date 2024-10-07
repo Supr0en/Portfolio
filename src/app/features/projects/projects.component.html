@@ -1,7 +1,10 @@
 <div id="container">
+  <h1><a href="/profile#projects">My Projects</a></h1>
   <ul class="project-card-container">
-    <li *ngFor="let item of displayedItems; let index = index" class="project-card" [id]=index >
-      <h2>{{ item }}</h2>
+    <li *ngFor="let name of displayedProjectsName; index as index" class="project-card" [id]=index >
+      <h2>{{ name }}</h2>
+      <p>{{ displayedProjectDesc[index] }}</p>
+      <a></a>
     </li>
   </ul>
 </div>
