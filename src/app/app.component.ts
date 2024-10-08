@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { ProjectsComponent } from './features/projects/projects.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -7,7 +7,7 @@ import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ProjectsComponent, FontAwesomeModule],
+  imports: [RouterOutlet, ProjectsComponent, FontAwesomeModule, RouterLink, RouterLinkActive],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
