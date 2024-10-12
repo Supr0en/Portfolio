@@ -1,0 +1,19 @@
+<div id="bottomSheet" class="bottom-sheet" [class.open]="isOpen">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" class="bottom-sheet-form">
+    <h2>Contact with me</h2>
+
+    <label for="email">Email</label>
+    <input id="email" type="email" formControlName="email" placeholder="Enter your email">
+    <div *ngIf="form.get('email')?.invalid && form.get('email')?.touched">Valid email is required.</div>
+    <label for="linkedin">linkedin</label>
+    <input id="linkedin" type="url" formControlName="linkedin" placeholder="Enter your linkedin profile url">
+    <div *ngIf="form.get('email')?.invalid && form.get('email')?.touched">Please add linkedin prfile url to verify</div>
+    <label>Message</label>
+    <textarea></textarea>
+
+    <div class="buttons">
+      <button type="submit" class="submit-btn">Submit</button>
+      <button type="button" class="cancel-btn" (click)="close()">Cancel</button>
+    </div>
+  </form>
+</div>

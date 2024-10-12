@@ -17,7 +17,7 @@
   max-height: 80%;
   background-color: var(--third);
   border-radius: 1rem;
-  border: 2px solid var(--primary);
+  box-shadow: 0 -2px 10px var(--secondary);
 }
 article {
     padding: 2% 10% 2% 10%;

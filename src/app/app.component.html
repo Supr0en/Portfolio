@@ -11,7 +11,7 @@
         <a href="https://www.linkedin.com/in/erikruotsalainen/">
           <fa-icon class="fa fa-linkedin" [icon]="faLinkedin"></fa-icon>
         </a>
-        <a style="margin: auto;">
+        <a style="margin: auto;" (click)="openBottomSheet()">
           <fa-icon class="fa fa-chevronUp" [icon]="faChevronUp"></fa-icon>
         </a>
         <a href="https://twitter.com/Supr0en">
@@ -19,6 +19,7 @@
         </a>
       </div>
     </footer>
+    <app-form></app-form>
   </div>
 </main>
 
